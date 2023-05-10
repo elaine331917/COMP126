@@ -1,0 +1,152 @@
+body {
+    margin:0;
+    height:100vh;
+    display:grid;
+}
+
+header {
+    background-color: #5C415D;
+    color:white;
+    display:flex;
+    justify-content: left;
+    padding-left:2rem;
+    align-items: center;
+    font-weight: bold;
+    height:8rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+#icon {
+    height:30px;
+}
+
+.custom-nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    top:0;
+    background-color: white;
+}
+
+li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color:black;
+    width:15vw;
+    padding:1rem;
+    margin:0.5rem;
+    margin-top:1rem;
+    background-color: #B1E5F2;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: background-color 500ms;
+}
+
+li a:hover {
+    background-color: #EDB6A3;
+}
+
+form {
+    display:grid;
+    background-color: rgb(239, 239, 239);
+    font-family: 'Josefin Sans', sans-serif;
+    margin:0.5rem 0.5rem;
+    padding: 0.5rem 1rem;
+    border:1px solid rgb(159, 159, 159);
+}
+
+form #alt-font {
+    font-family: 'Exo 2', sans-serif; 
+}
+
+input {
+  background-color:rgb(255, 255, 255);
+  outline: 3px solid transparent;
+  font-size: 16px;
+  height: auto;
+  border: black solid 1px;
+  width:100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: all 350ms;
+}
+
+#email, #name {
+    width: 95%;
+}
+
+label {
+    display:block;
+    margin-bottom: 5px;
+}
+
+input:hover,
+input:focus {
+  outline: 3px solid #EDB6A3;
+}
+
+button {
+    background-image: linear-gradient(to right, #B1E5F2, #EDB6A3 30%);
+    background-size:300%;
+    background-position: 0%;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    border:none;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    transition: background-position 600ms ease;
+}
+
+button:hover {
+    background-position: 100%;
+}
+
+footer {
+    background-color: #5C415D;
+    color:white;
+    display:flex;
+    justify-content: center;
+    padding-left:2rem;
+    align-items: center;
+    font-weight: bold;
+    height:8rem;
+    font-family: 'Exo 2', sans-serif; 
+    margin:0;
+}
+
+main {
+    padding:10px;
+}
+
+@media screen and (min-width: 780px) {
+    body {
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    
+    header {
+        grid-column: 1 / 6;
+    }
+
+    .custom-nav {
+        grid-column: 1 / 2;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main {
+        grid-column: 2 / 6;
+    }
+
+    footer {
+        grid-column: 1 / 6;
+    }
+}

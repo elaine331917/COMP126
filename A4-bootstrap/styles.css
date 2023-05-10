@@ -1,0 +1,106 @@
+body {
+    margin:0;
+}
+
+form {
+    display:flex;
+}
+
+.custom-nav-bar {
+    color: rgb(166, 166, 166);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav a {
+    color: grey;
+}
+
+.nav-item a:hover {
+    color:black;
+}
+
+#header {
+    margin: 0 0.5rem;
+    margin-top:1rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+.card {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+#btn {
+    width:6rem;
+    border:none;
+    background-color: rgb(0, 0, 48);
+    color:white;
+    padding: 0.5rem;
+    margin-left:0.7rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;;
+}
+
+.image {
+    width: auto;
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom:0.5rem;
+}
+
+.image-1 {
+    background-image: url(./images/chocolate-cupcake.jpg);
+}
+
+.image-2 {
+    background-image: url(./images/red-velvet-cupcake.jpg);
+}
+
+.image-3 {
+    height: 100%;
+    min-height: 50vh;
+    background-image: url(./images/oreo-cupcake.jpg);
+}
+
+#img-3 {
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+#search-btn {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin:none;
+    height:100%;
+    min-height: 2rem;
+    min-width: 2rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgb(222, 222, 222);
+}
+
+input {
+    border: none;
+    height: 100%;
+	width: 100%;
+    outline: none;
+    display: flex;
+}
+
+.search {
+    width: 100%;
+	max-width: 13rem;
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	min-height: 2rem;
+	height: auto;
+    border: 1px solid rgb(222, 222, 222);
+    border-right: none;
+}

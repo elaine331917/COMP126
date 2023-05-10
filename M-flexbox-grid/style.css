@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+}
+
+.img1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    margin: 0.5rem;
+    background-image: url(images/melon.jpeg);
+}
+
+.img2 {
+    background-image: url(images/strawberry.jpeg);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 0.5rem;
+}
+
+.img3 {
+    background-image: url(images/watermelon.jpeg);
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 0.5rem;
+}
+
+.img4 {
+    flex:2 2 20rem;
+    background-image: url(images/white-cat.jpeg);
+    margin: 0.5rem;
+}
+
+.img5 {
+    flex:1 1 10rem;
+    background-image: url(images/orange-cat.jpeg);
+    margin: 0.5rem;
+}
+
+.img6 {
+    flex:1 1 10rem;
+    background-image: url(images/british-shorthair-cat.png);
+    margin: 0.5rem;
+}
+
+.img {
+    margin: 0.5rem;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.box1 {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+    background-color: black;
+    height:100vh;
+    width:50%;
+    padding:0.5rem;
+    margin:0.2rem;
+    border-radius: 10px;
+}
+
+.box2 {
+    display:flex;
+    flex-flow: row wrap;
+    background-color: black;
+    height:100vh;
+    width:50%;
+    padding:0.5rem;
+    margin:0.2rem;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        flex-flow: column wrap;
+    }
+    
+    .box1 {
+        height:50vh;
+        width: 100%;
+    }
+
+    .box2 {
+        height:50vh;
+        width: 100%;
+    }
+}
